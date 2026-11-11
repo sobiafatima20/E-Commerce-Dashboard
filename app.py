@@ -71,10 +71,10 @@ try:
 
     else:
         try:
-            with open("ecommerce_customers.csv", "rb") as f:
+            with open("Ecommerce_Customers.csv", "rb") as f:
                 raw = read_csv_file(f.read())
 
-            source = "ecommerce_customers.csv"
+            source = "Ecommerce_Customers.csv"
 
         except FileNotFoundError:
             with open("Ecommerce Customers.csv", "rb") as f:
@@ -88,7 +88,7 @@ except FileNotFoundError:
     st.title("🛍️ E-Commerce DashBoard")
     st.warning(
         "CSV nahi mili. Sidebar se CSV upload karein "
-        "ya app folder mein ecommerce_customers.csv rakhein."
+        "ya app folder mein Ecommerce_Customers.csv rakhein."
     )
     st.stop()
 
